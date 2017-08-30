@@ -17,7 +17,7 @@ public class Item implements Serializable {
 
     @ManyToMany(cascade = {
             CascadeType.PERSIST,
-            CascadeType.MERGE
+            CascadeType.PERSIST
     })
     @JoinTable(name = "item_character",
             joinColumns = @JoinColumn(name = "item_id"),
